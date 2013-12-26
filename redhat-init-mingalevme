@@ -27,10 +27,10 @@ PREFIX=/data/py_crazy_env
 SUPERVISORD=$PREFIX/bin/supervisord
 SUPERVISORCTL=$PREFIX/bin/supervisorctl
 
-PIDFILE=/var/run/supervisord.pid
-LOCKFILE=/var/lock/subsys/supervisord
+PIDFILE=/tmp/supervisord.pid
+LOCKFILE=/tmp/supervisord.lock
 
-OPTIONS="-c /opt/sentry/etc/supervisord.conf"
+OPTIONS="-c /etc/supervisord.conf"
 
 # unset this variable if you don't care to wait for child processes to shutdown before removing the $LOCKFILE-lock
 WAIT_FOR_SUBPROCESSES=yes
