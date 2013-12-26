@@ -22,7 +22,7 @@
 
 set -a
 
-PREFIX=/opt/sentry
+PREFIX=/data/py_crazy_env
 
 SUPERVISORD=$PREFIX/bin/supervisord
 SUPERVISORCTL=$PREFIX/bin/supervisorctl
